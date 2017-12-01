@@ -16,3 +16,15 @@ update-database
 ## Adding a new table to DB ##
 
 # Add a new class file with table info i.e. NewTableModel
+# Create a class under the model folder or wherver you keep you models at
+# Make sure you create a primary key column and add the [Key] attribute to the column i.e.
+#	[Key]
+#   public int id { get; set; }
+# Make sure that you make the primary key column public
+# use  [StringLength(100)] for varchars and to specify the length for varchars
+# add table to your model OnModelCreating function
+# i.e.
+#	modelBuilder.Entity<NewTableModel>().ToTable("New");
+# Note: The Entity<ModelName> is the class that was created for the model and ToTable is the name of the table being created.
+Add-Migration AddingNewModel
+Update-Database

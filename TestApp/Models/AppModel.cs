@@ -14,6 +14,7 @@ namespace TestApp.Models {
 
             // Rather than identityUser generic class , use the name of the renamed ApplicationUser being User
             modelBuilder.Entity<TestTableModel>().ToTable("Test");
+            modelBuilder.Entity<NewTableModel>().ToTable("New");
         }
     }
 }

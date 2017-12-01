@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace TestApp.Models {
-    class TestTableModel {
+    public class TestTableModel {
         [Key]
         public int id { get; set; }
 
