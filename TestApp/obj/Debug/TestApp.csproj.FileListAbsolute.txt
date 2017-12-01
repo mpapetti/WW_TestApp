@@ -1,0 +1,12 @@
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\TestApp.exe.config
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\TestApp.exe
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\TestApp.pdb
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\EntityFramework.dll
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\EntityFramework.xml
+C:\Projects\WorkWave\TestApp\TestApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\WorkWave\TestApp\TestApp\obj\Debug\TestApp.csprojResolveAssemblyReference.cache
+C:\Projects\WorkWave\TestApp\TestApp\obj\Debug\TestApp.exe
+C:\Projects\WorkWave\TestApp\TestApp\obj\Debug\TestApp.pdb
+C:\Projects\WorkWave\TestApp\TestApp\obj\Debug\TestApp.Migrations.InitialBaseLine.resources
+C:\Projects\WorkWave\TestApp\TestApp\obj\Debug\TestApp.csproj.GenerateResource.Cache
