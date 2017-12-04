@@ -28,3 +28,8 @@ update-database
 # Note: The Entity<ModelName> is the class that was created for the model and ToTable is the name of the table being created.
 Add-Migration AddingNewModel
 Update-Database
+
+# Setting default Date Value use: 'defaultValueSql: "GETDATE()"' i.e.
+ModifiedDate = c.DateTime(nullable: false, defaultValueSql: "GETDATE()")
+#or
+Name = c.String(nullable: false, defaultValueSql: "Jose")

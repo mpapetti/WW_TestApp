@@ -58,12 +58,13 @@
     <Compile Include="Migrations\201712011941234_InitialBaseLine.Designer.cs">
       <DependentUpon>201712011941234_InitialBaseLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712011956593_AddingNewModel.cs" />
-    <Compile Include="Migrations\201712011956593_AddingNewModel.Designer.cs">
-      <DependentUpon>201712011956593_AddingNewModel.cs</DependentUpon>
+    <Compile Include="Migrations\201712041438138_AddingCompany.cs" />
+    <Compile Include="Migrations\201712041438138_AddingCompany.Designer.cs">
+      <DependentUpon>201712041438138_AddingCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppModel.cs" />
+    <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\NewTableModel.cs" />
     <Compile Include="Models\TestTableModel.cs" />
     <Compile Include="Program.cs" />
@@ -80,8 +81,8 @@
     <EmbeddedResource Include="Migrations\201712011941234_InitialBaseLine.resx">
       <DependentUpon>201712011941234_InitialBaseLine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712011956593_AddingNewModel.resx">
-      <DependentUpon>201712011956593_AddingNewModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712041438138_AddingCompany.resx">
+      <DependentUpon>201712041438138_AddingCompany.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
