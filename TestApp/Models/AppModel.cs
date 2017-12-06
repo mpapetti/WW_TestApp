@@ -10,6 +10,7 @@ namespace TestApp.Models {
         public DbSet<NewTableModel> NewTableModel { get; set; }
 
         public DbSet<CompanyModel> Company { get; set; }
+        public DbSet<StudentsModel> Students { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder) {
@@ -20,6 +21,7 @@ namespace TestApp.Models {
             modelBuilder.Entity<TestTableModel>().ToTable("Test");
             modelBuilder.Entity<NewTableModel>().ToTable("New");
             modelBuilder.Entity<CompanyModel>().ToTable("Company");
+            modelBuilder.Entity<StudentsModel>().ToTable("Student");
         }
     }
 }

@@ -54,18 +54,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201712011941234_InitialBaseLine.cs" />
-    <Compile Include="Migrations\201712011941234_InitialBaseLine.Designer.cs">
-      <DependentUpon>201712011941234_InitialBaseLine.cs</DependentUpon>
+    <Compile Include="Migrations\201712011941060_InitialBaseLine.cs" />
+    <Compile Include="Migrations\201712011941060_InitialBaseLine.Designer.cs">
+      <DependentUpon>201712011941060_InitialBaseLine.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201712041438138_AddingCompany.cs" />
     <Compile Include="Migrations\201712041438138_AddingCompany.Designer.cs">
       <DependentUpon>201712041438138_AddingCompany.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712061859006_StudentTable.cs" />
+    <Compile Include="Migrations\201712061859006_StudentTable.Designer.cs">
+      <DependentUpon>201712061859006_StudentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712061909150_Test.cs" />
+    <Compile Include="Migrations\201712061909150_Test.Designer.cs">
+      <DependentUpon>201712061909150_Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppModel.cs" />
     <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\NewTableModel.cs" />
+    <Compile Include="Models\StudentsModel.cs" />
     <Compile Include="Models\TestTableModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +87,17 @@
     <None Include="Readme" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712011941234_InitialBaseLine.resx">
-      <DependentUpon>201712011941234_InitialBaseLine.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712011941060_InitialBaseLine.resx">
+      <DependentUpon>201712011941060_InitialBaseLine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712041438138_AddingCompany.resx">
       <DependentUpon>201712041438138_AddingCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712061859006_StudentTable.resx">
+      <DependentUpon>201712061859006_StudentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712061909150_Test.resx">
+      <DependentUpon>201712061909150_Test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
