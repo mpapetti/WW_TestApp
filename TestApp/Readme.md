@@ -33,3 +33,19 @@ Update-Database
 ModifiedDate = c.DateTime(nullable: false, defaultValueSql: "GETDATE()")
 #or
 Name = c.String(nullable: false, defaultValueSql: "Jose")
+
+# Data Motion : No native support for data motion yet but you can run SQL commands i.e.
+# add this to the Up() override
+Sql("UPDATE dbo.MyDBTable SET ColumnName = LEFT(Content, 100) WHERE ColumnName IS NULL");
+Sql("INSERT INTO MyNewTable(NyColumnName) Values('Test')");
+
+# Automatic DB migration: Update DB to latest on startup i.e. 
+# This can be added to the Main() function for a Console app or to the protected void Application_Start()
+# in the Global.asax.cs in MVC
+ Database.SetInitializer(new MigrateDatabaseToLatestVersion<BlogContext, Configuration>());
+
+ # Downgrading: This will run the Down() scripts  Run the Update-Database –TargetMigration: MigrationName i.e.
+Update-Database –TargetMigration: StudentTable 
+
+# To roll back to an empty DB
+Update-Database –TargetMigration: $InitialDatabase
