@@ -1,8 +1,9 @@
-﻿## Creating Migration Code First ##
-# To enable code first db migration
+# Creating Migration Code First ##
+
+## To enable code first db migration
 1. Enable-Migrations
 
-# Add an initial create script to an exisiting db i.e cmd name -params
+## Add an initial create script to an exisiting db i.e cmd name -params
 Add-Migration InitialCreate -IgnoreChanges
 
 # The ignorechanges command will create an empty db script to create a base db run same command without ignore
